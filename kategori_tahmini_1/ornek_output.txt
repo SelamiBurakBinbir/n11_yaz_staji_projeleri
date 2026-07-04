@@ -1,0 +1,44 @@
+Kurulum başlıyor...
+OpenCLIP yükleniyor...
+ResNet50 yükleniyor...
+Modeller hazır.
+CSV yüklendi: 4920 satır
+Hiyerarşi oluşturuluyor...
+  L1: 64 kategori
+  L2: 282 kategori
+  L3: 753 kategori
+  L4: 292 kategori
+  Parent-child L1→L2: 64 parent
+  Parent-child L2→L3: 282 parent
+  Parent-child L3→L4: 149 parent
+Text embedding üretiliyor...
+Text embed cache kaydedildi.
+Görsel embedding’ler üretiliyor (tüm dataset için)...
+Encode images: 100%|███████████████████████████████████████████████████████████████| 4920/4920 [05:03<00:00, 16.20it/s]
+Görsel embed cache kaydedildi: 4920 örnek
+Label matrisleri hazırlanıyor...
+Label cache kaydedildi.
+Kurulum tamam.
+Split -> train:3936 val:984 test:0
+L1 ayarlanıyor (k ve α_c)...
+L2 ayarlanıyor (k ve α_c)...
+L3 ayarlanıyor (k ve α_c)...
+L4 ayarlanıyor (k ve α_c)...
+
+Değerlendirme (validation üzerinde)...
+  L1: acc=0.761 (n=984)  | k=1
+  L2: acc=0.696 (n=984)  | k=1
+  L3: acc=0.640 (n=984)  | k=1
+  L4: acc=0.664 (n=259)  | k=1
+
+Hiyerarşik test başlıyor...
+Testing: 100%|█████████████████████████████████████████████████████████████████████| 4920/4920 [05:52<00:00, 13.95it/s]
+
+====================================================================================================
+HİYERARŞİK TEST RAPORU - 4920 ÖRNEK
+  L1: 0.943  (n=4920)
+  L2: 0.889  (n=4920)
+  L3: 0.834  (n=4920)
+  L4: 0.866  (n=1309)
+Hiyerarşik Başarı: 0.826  (4062/4920)
+====================================================================================================
