@@ -54,7 +54,7 @@ Kullanılan başlıca teknolojiler:
 
 Örnek çıktı:
 
-- `ornek_output.png`
+<img width="1700" height="883" alt="ornek_output" src="https://github.com/user-attachments/assets/f44ac633-5d39-47bc-9a8f-92d444a05176" />
 
 ---
 
@@ -82,7 +82,7 @@ Kullanılan başlıca teknolojiler:
 
 Örnek çıktı:
 
-- `ornek_output.png`
+<img width="830" height="890" alt="ornek_output" src="https://github.com/user-attachments/assets/efa107d6-69c0-4af1-8cc0-41595228fa9a" />
 
 ---
 
@@ -106,7 +106,55 @@ Kullanılan başlıca teknolojiler:
 
 Örnek çıktı:
 
-- `ornek_output.txt`
+```text
+Kurulum başlıyor...
+OpenCLIP yükleniyor...
+ResNet50 yükleniyor...
+Modeller hazır.
+CSV yüklendi: 4920 satır
+Hiyerarşi oluşturuluyor...
+  L1: 64 kategori
+  L2: 282 kategori
+  L3: 753 kategori
+  L4: 292 kategori
+  Parent-child L1→L2: 64 parent
+  Parent-child L2→L3: 282 parent
+  Parent-child L3→L4: 149 parent
+Text embedding üretiliyor...
+Text embed cache kaydedildi.
+Görsel embedding’ler üretiliyor (tüm dataset için)...
+Encode images: 100%|███████████████████████████████████████████████████████████████| 4920/4920 [05:03<00:00, 16.20it/s]
+Görsel embed cache kaydedildi: 4920 örnek
+Label matrisleri hazırlanıyor...
+Label cache kaydedildi.
+Kurulum tamam.
+Split -> train:3936 val:984 test:0
+L1 ayarlanıyor (k ve α_c)...
+L2 ayarlanıyor (k ve α_c)...
+L3 ayarlanıyor (k ve α_c)...
+L4 ayarlanıyor (k ve α_c)...
+
+Değerlendirme (validation üzerinde)...
+  L1: acc=0.761 (n=984)  | k=1
+  L2: acc=0.696 (n=984)  | k=1
+  L3: acc=0.640 (n=984)  | k=1
+  L4: acc=0.664 (n=259)  | k=1
+
+Hiyerarşik test başlıyor...
+Testing: 100%|█████████████████████████████████████████████████████████████████████| 4920/4920 [05:52<00:00, 13.95it/s]
+
+====================================================================================================
+HİYERARŞİK TEST RAPORU - 4920 ÖRNEK
+  L1: 0.943  (n=4920)
+  L2: 0.889  (n=4920)
+  L3: 0.834  (n=4920)
+  L4: 0.866  (n=1309)
+Hiyerarşik Başarı: 0.826  (4062/4920)
+====================================================================================================
+
+----
+bu metni markdown formatında nasıl kod bloğu içine alırım
+```
 
 ---
 
@@ -127,10 +175,14 @@ Kullanılan başlıca teknolojiler:
 - FAISS
 - Cosine similarity
 
-Örnek çıktılar:
+Örnek çıktı:
 
-- `ornek_output.png`
-- `ornek_iyilestirme_ozeti.png`
+<img width="1919" height="435" alt="ornek_output" src="https://github.com/user-attachments/assets/db4ef3f2-545e-45bb-85d7-7acd092fa71c" />
+
+
+Örnek iyileştirme özeti:
+
+<img width="664" height="152" alt="ornek_iyilestirme_ozeti" src="https://github.com/user-attachments/assets/6bdc53ac-6f9e-4201-bf4e-ec77fb7932e2" />
 
 ---
 
@@ -155,10 +207,11 @@ Kullanılan başlıca teknolojiler:
 - PyTorch
 - Hierarchical cascade head
 
-Örnek çıktılar:
+Örnek test sonuçları:
 
-- `ornek_test_sonucu_1.png`
-- `ornek_test_sonucu_2.png`
+<img width="1300" height="864" alt="ornek_test_sonucu_1" src="https://github.com/user-attachments/assets/03e60fdf-3dad-4eae-8029-0d8e2b4b976e" />
+
+<img width="1297" height="1242" alt="ornek_test_sonucu_2" src="https://github.com/user-attachments/assets/0c381f2c-e031-48ca-b0b5-2ff8538f29fb" />
 
 ## Genel Amaç
 
